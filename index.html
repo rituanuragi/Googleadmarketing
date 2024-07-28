@@ -50,7 +50,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <div class="container-xxl bg-white p-0">
+    <div class="  bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -62,8 +62,8 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0" id="home">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 mb-0 nav-bottom">
+        <div class="  position-relative p-0" id="home">
+            <nav class="navbar  navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 mb-0 nav-bottom">
                 <a href="" class="navbar-brand p-0">
 
                     <!-- <img class="logo-default.png" src="img/F2-Fintech-logoblack.png" alt="Logo" height="600px"> -->
@@ -82,7 +82,7 @@
                         <a href="#contact" class="nav-item nav-link">Contact</a> -->
                     </div>
             </nav>
-            <div class="container-xxl  hero-header">
+            <div class="   hero-header">
 
                 <div class="container  content-h">
                     <div class="row g-5 align-items-start">
@@ -125,8 +125,7 @@
                                 <p style="color: white; padding-left: 4px; font-size: 15px;">Empower your financial
                                     future with F2 Fintech</p>
 
-                                <form id="loanForm" action="http://35.154.6.43:3000/api/send-email" method="POST"
-                                    target="hidden_iframe">
+                                <form id="loanForm" action="http://localhost:3000/api/send-email" method="POST">
                                     <div class="form-group">
                                         <label for="name">Name</label>
                                         <input type="text" id="name" name="name" required>
@@ -142,8 +141,8 @@
                                     <div class="form-terms">
                                         <label>
                                             <input type="checkbox" id="terms" name="terms" required>
-                                            I agree to the <a href="terms-and-conditions.html" target="_blank">terms and
-                                                conditions</a>
+                                            I agree to the terms and
+                                            conditions</a>
                                         </label>
                                     </div>
                                     <button type="submit">Apply Now</button>
@@ -170,6 +169,7 @@
 
 
                             </div>
+
                             <!-- <img src="/img/Subtract.png" class="sub-img"> -->
                         </div>
                     </div>
@@ -180,7 +180,7 @@
 
 
             <!-- About Start -->
-            <div class="container-xxl py-5 about-div" id="about">
+            <div class="  py-5 about-div" id="about">
                 <div class="container py-5 px-lg-5">
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -223,8 +223,8 @@
                                             <span class="fa-times-circle text-white"></span>
                                         </a>
                                         <h5 class="card-title">Get Loan</h5>
-                                        <form id="loanForm1" action="http://35.154.6.43:3000/api/send-email" method="POST"
-                                            target="hidden_iframe">
+                                        <form id="loanForm1" action="http://localhost:3001/api/send-email"
+                                            method="POST">
                                             <div class="form-group" id="contactus">
                                                 <label for="name">Name</label>
                                                 <input type="text" style="color: black;" class="form-control" id="name"
@@ -264,7 +264,6 @@
                                     messageDiv.textContent = 'Form submitted';
 
                                     setTimeout(function () {
-                                        messageDiv.textContent = 'Form submitted.';
                                         document.getElementById('loanForm1').submit();
                                     }, 3000);
                                 });
@@ -281,7 +280,7 @@
 
 
             <!-- Features Start -->
-            <div class="container-xxl py-5 features-div" id="feature">
+            <div class="  py-5 features-div" id="feature">
                 <div class="container py-5 px-lg-5">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="text-primary-gradient fw-medium mb-5"><b>Trending Services</b></h1>
@@ -375,7 +374,7 @@
 
 
             <!-- Screenshot Start -->
-            <!-- <div class="container-xxl py-5">
+            <!-- <div class="  py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
@@ -403,7 +402,7 @@
 
 
             <!-- Process Start -->
-            <div class="container-xxl py-5">
+            <div class="  py-5">
                 <div class="container py-5 px-lg-5">
                     <div class="text-center pb-4 wow fadeInUp " data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">How It Works</h5>
@@ -422,7 +421,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="position-relative bg-light rounded pt-5 pb-4 px-4 mx-1">
+                            <div class="position-relative bg-light rounded pt-5 pb-5 px-4 mx-1">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
                                     style="width: 100px; height: 100px;">
                                     <i class="fa fa-user fa-3x text-white"></i>
@@ -439,7 +438,7 @@
                                     <i class="fa fa-check-circle fa-3x text-white"></i>
                                 </div>
                                 <h5 class="mt-4 mb-3 text-primary-gradient">step:3</h5>
-                                <p class="mb-0 steps-text" style="text-align: justify; gap:0px;">All your information
+                                <p class="mb-0 steps-text" style="text-align: justify; gap:0px;">Your information
 
                                     verified, if meets the required criteria.</p>
                             </div>
@@ -463,7 +462,7 @@
 
 
             <!-- Download Start -->
-            <!-- <div class="container-xxl py-5">
+            <!-- <div class="  py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
@@ -502,7 +501,7 @@
 
             <!--    Pricing  
 
-        <div class="container-xxl py-5" id="pricing">
+        <div class="  py-5" id="pricing">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
@@ -648,7 +647,7 @@
 
 
             <!-- Testimonial Start -->
-            <div class="container-xxl py-5" id="review">
+            <div class="  py-5" id="review">
                 <div class="container py-5 px-lg-5">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Testimonial</h5>
@@ -744,7 +743,7 @@
 
             <!-- contact form  -->
 
-            <div class="container-xxl py-5" id="contact">
+            <div class="  py-5" id="contact">
                 <div class="container py-5 px-lg-5">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
@@ -753,8 +752,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-9">
                             <div class="wow fadeInUp" data-wow-delay="0.3s">
-                                <form id="contactForm" action="http://35.154.6.43:3000/api/send-email" method="POST"
-                                    target="hidden_iframe">
+                                <form id="contactForm" action="http://localhost:3001/api/send-email" method="POST">
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="form-floating">

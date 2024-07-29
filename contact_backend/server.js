@@ -39,7 +39,7 @@ app.post("/api/send-email", (req, res) => {
   // Email options
   const mailOptions = {
     from: "rituanuragi1@gmail.com",
-    to: "rituf2fintech@gmail.com",
+    to: "marketing@f2fintech.com",
     subject: "Loan Application Received",
     text: `Name: ${name}\nContact: ${contact}\nEmail: ${email}`, // Email content
   };

@@ -575,7 +575,7 @@ h6,
 @media only screen and (max-width: 768px) {
   .steps-text {
     padding: 0px 25px;
-    text-wrap: pretty;
+    text-wrap: auto;
   }
 }
 .marquee-container {
@@ -788,7 +788,7 @@ button:hover {
 /* Optional: Add some padding and border radius to the card */
 .card-form {
   border-radius: 10px;
-  background-color: rgba(95, 95, 250, 0.5);
+  background-color: #3f3fef;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
 }
 .card-form input {
@@ -922,7 +922,7 @@ button:hover {
     text-wrap:balance;
   }
   .steps-para {
-  padding: 0px 20px;
+  padding: 0px 27px;
   }
 }
 .first-div{
@@ -938,5 +938,8 @@ button:hover {
   .footer-new {
     height: 33vh;
     
+  }
+  .st-4{
+    text-wrap: nowrap;
   }
 }

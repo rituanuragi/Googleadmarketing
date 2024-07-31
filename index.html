@@ -33,20 +33,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <style>
-        .submit-message {
-            display: none;
-            color: green;
-
-        }
-
-        .card-form {
-            background-color: #646edb;
-            padding: 10px;
-            max-width: 400px;
-            width: 100%;
-        }
-    </style>
+  
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -62,7 +49,7 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="  position-relative p-0" id="home">
+        <div class="  position-relative p-0 first-div" id="home">
             <nav class="navbar  navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 mb-0 nav-bottom">
                 <a href="" class="navbar-brand p-0">
 
@@ -115,7 +102,7 @@
 
 
                                 <div class="top-img">
-                                    <!-- <img  src="./img/topimage-removebg-preview.png"> -->
+                                
                                 </div>
                             </div>
                         </div>
@@ -128,49 +115,43 @@
                                 <form id="loanForm" action="http://35.154.6.43:5000/api/send-email" method="POST">
                                     <div class="form-group">
                                         <label for="name">Name</label>
-                                        <input type="text" id="name" name="name" required>
+                                        <input type="text" id="name" name="name" >
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="email" id="email" name="email" required>
+                                        <input type="email" id="email" name="email" >
                                     </div>
                                     <div class="form-group">
                                         <label for="contact">Contact Number</label>
-                                        <input type="tel" id="contact" name="contact" required>
+                                        <input type="tel" id="contact" name="contact" >
                                     </div>
                                     <div class="form-terms">
                                         <label>
-                                            <input type="checkbox" id="terms" name="terms" required>
+                                            <input type="checkbox" id="terms" name="terms" >
                                             I agree to the terms and
                                             conditions</a>
                                         </label>
                                     </div>
-                                    <button type="submit">Apply Now</button>
+                                    <button type="submit" onclick="
+                                    setTimeout()">Apply Now</button>
                                 </form>
 
                                 <div id="submissionMessage"></div>
 
                                 <script>
                                     document.getElementById('loanForm').addEventListener('submit', function (event) {
-                                        event.preventDefault(); // Prevent the form from submitting immediately
+                                        event.preventDefault(); 
 
                                         const messageDiv = document.getElementById('submissionMessage');
-                                        messageDiv.style.display = 'block'; // Show the submission message
+                                        messageDiv.style.display = 'block'; 
                                         messageDiv.textContent = 'Form submitted';
-
-                                        setTimeout(function () {
-                                            messageDiv.textContent =
-                                                'Form submitted.'; // Change the message to "Form submitted"
-                                            document.getElementById('loanForm')
-                                                .submit();
-                                        }, 3000);
+                                        setTimeout(function() {
+                                        window.location.href = 'https://www.f2fintech.com/'; 
+                                    }, 2000); 
+        
                                     });
                                 </script>
-
-
                             </div>
-
-                            <!-- <img src="/img/Subtract.png" class="sub-img"> -->
                         </div>
                     </div>
                 </div>
@@ -188,7 +169,7 @@
 
                             <h5 class="mb-4 steps-text">Welcome to F2 Fintech. Your go-to place for choosing best loans
                                 in India.</h5>
-                            <p>We're F2Fintech, the one-stop destination for easing the loan process in India. We help
+                            <p class="steps-para">We're F2Fintech, the one-stop destination for easing the loan process in India. We help
                                 you navigate the complex world of finance. We have you covered, regardless of the type
                                 of loan you require. We carefully consider your specific scenario to ensure you get the
                                 best possible offer.</p>
@@ -213,7 +194,7 @@
                                 </div>
                             </div>
                             <a id="popupButton"
-                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Contact
+                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3 contact-upr-btn">Contact
                                 Us</a>
                             <div id="popupForm" class="popup">
                                 <div class="card-form">
@@ -284,8 +265,8 @@
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="text-primary-gradient fw-medium mb-5"><b>Trending Services</b></h1>
                     </div>
-                    <div class="row g-3 ">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-3 fd">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.1s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -296,7 +277,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.3s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -306,7 +287,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.5s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -316,7 +297,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.1s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -326,7 +307,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.3s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -336,7 +317,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.5s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -346,7 +327,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.5s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -356,7 +337,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp fi" data-wow-delay="0.5s">
                             <div class="feature-item bg-light rounded p-4">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
                                     style="width: 60px; height: 60px;">
@@ -402,12 +383,12 @@
 
             <!-- Process Start -->
             <div class="  py-5">
-                <div class="container py-5 px-lg-5">
+                <div class="container py-5 px-lg-5 ">
                     <div class="text-center pb-4 wow fadeInUp " data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">How It Works</h5>
                         <h1 class="mb-5">4 Easy Steps</h1>
                     </div>
-                    <div class="row gy-5 gx-4 justify-content-center" id="process">
+                    <div class="row gy-5 gx-4 justify-content-center mx-3" id="process">
                         <div class="col-lg-3 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="position-relative bg-light rounded pt-5 pb-4 px-4 mx-1">
                                 <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
@@ -426,7 +407,7 @@
                                     style="width: 100px; height: 100px;">
                                     <i class="fa fa-check-circle fa-3x text-white"></i>
                                 </div>
-                                <h5 class="mt-4 mb-3 text-primary-gradient">step:2</h5>
+                                <h5 class="mt-4 mb-3 text-primary-gradient">Step:2</h5>
                                 <p class="mb-0 steps-text" style="text-align: justify; gap:0px;">Our team at F2 Fintech
                                     will
                                     review.</p>
@@ -438,7 +419,7 @@
                                     style="width: 100px; height: 100px;">
                                     <i class="fa fa-check-circle fa-3x text-white"></i>
                                 </div>
-                                <h5 class="mt-4 mb-3 text-primary-gradient">step:3</h5>
+                                <h5 class="mt-4 mb-3 text-primary-gradient">Step:3</h5>
                                 <p class="mb-0 steps-text" style="text-align: justify; gap:0px;">Your information
 
                                     verified, if meets the required criteria.</p>
@@ -450,9 +431,8 @@
                                     style="width: 100px; height: 100px;">
                                     <i class="fa fa-thumbs-up fa-3x text-white"></i>
                                 </div>
-                                <h5 class="mt-4 mb-3 text-primary-gradient">step:3</h5>
-                                <p class="mb-0 steps-text" style="text-align: justify; gap:0px;">Your loan will be
-                                    approved promptly.</p>
+                                <h5 class="mt-4 mb-3 text-primary-gradient">Step:4</h5>
+                                <p class="mb-0 steps-text" style="text-align: justify; text-wrap: nowrap;  ">Your loan will be approved promptly.</p>
                             </div>
                         </div>
                     </div>
@@ -655,7 +635,7 @@
                         <h1 class="mb-5">What Say Our Clients!</h1>
                     </div>
                     <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="testimonial-item rounded p-4">
+                        <div class="testimonial-item rounded p-4 mx-2">
                             <div class="d-flex align-items-center mb-4">
                                 <!-- <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/client2.png" style="width: 85px; height: 85px;"> -->
                                 <div class="ms-4">
@@ -673,9 +653,9 @@
                             </div>
                             <p class="mb-0">The online process was quick and easy, also the loan approval was quite
                                 fast. The interest rate was competitive, and eveything was transparent with no hidden
-                                fees. Highly recommend!</p>
+                                fees. Highly recommended!</p>
                         </div>
-                        <div class="testimonial-item rounded p-4">
+                        <div class="testimonial-item rounded p-4 mx-2">
                             <div class="d-flex align-items-center mb-4">
                                 <!-- <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/client1.png" style="width: 85px; height: 85px;"> -->
                                 <div class="ms-4">
@@ -692,10 +672,10 @@
                                 </div>
                             </div>
                             <p class="mb-0">My loan with F2 Fintech was smooth, but what really impressed me was their
-                                ongoing support. They have a dedicated online portalfor easy access to my loan details.
+                                ongoing support. They have a dedicated online portal for easy access to my loan details.
                             </p>
                         </div>
-                        <div class="testimonial-item rounded p-4">
+                        <div class="testimonial-item rounded p-4 mx-2">
                             <div class="d-flex align-items-center mb-4">
                                 <!-- <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/client3.png" style="width: 85px; height: 85px;"> -->
                                 <div class="ms-4">
@@ -716,7 +696,7 @@
                                 experience. They not only provide the funds I needed, but also offered helpful financial
                                 tools and resources</p>
                         </div>
-                        <div class="testimonial-item rounded p-4">
+                        <div class="testimonial-item rounded p-4 mx-2">
                             <div class="d-flex align-items-center mb-4">
                                 <!-- <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg" style="width: 85px; height: 85px;"> -->
                                 <div class="ms-4">
@@ -745,7 +725,7 @@
             <!-- contact form  -->
 
             <div class="  py-5" id="contact">
-                <div class="container py-5 px-lg-5">
+                <div class="container py-5 px-lg-5 form-div-contact">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
                         <h1 class="mb-5">Get In Touch!</h1>
@@ -907,21 +887,21 @@
         </div> -->
             <!-- Footer End -->
             <div class="footer-new">
-                <p>We are a Global Electronic Marketplace for Buying & Selling Loans.
-                    Delegate your financial worries to us and focus on growing your core profession.F2 Fintech Regd.
+                <p> We are a Global Electronic Marketplace for Buying & Selling Loans.
+                    Delegate your financial worries to us and focus on growing your core professionAs an award-winning fintech company, we remain dedicated to pushing boundaries, exceeding expectations, and making a meaningful difference in the lives of our customers.F2 Fintech Regd.
                     Office: A-25, M-1 Arv Park, A-Block, Sector 63, Noida, Uttar Pradesh - 201301 ,
                     57- 58, near Patel Nagar, South Patel Nagar, Block 8, Patel Nagar, Delhi, New Delhi, Delhi 110008,
                     Senapati Bapat Marg | +918810600135 | wecare@f2fintech.cm | 12 BAJAJ COMPLEX Prem Nagar, Bareilly,
                     Uttar Pradesh ,India -
                     243001
-                    | C.E.O (Harpreet Singh & Abhinav Awal)
-                    . *Terms & Conditions apply. Offer available only in all cities. Loans originated, booked and
-                    serviced by F2 Fintech.
-                    We're F2Fintech, the one-stop destination for easing the loan process in India. We help you navigate
-                    the complex world of finance. We have you covered, regardless of the type of loan you require. We
-                    carefully consider specific scenario to ensure you get the best possible offer. Here's
-                    something to be proud of: since our inception, we've made over 11,000 clients happy.
-                    <br> © 2024, F2 Fintech. All Rights Reserved
+                    | C.E.O (Harpreet Singh & Abhinav Awal).<br> © 2024, F2 Fintech. All Rights Reserved
+                    <!-- <p class="footer-lowtext">*Terms & Conditions apply. Offer available only in all cities. Loans originated, booked and
+                        serviced by F2 Fintech.
+                        We're F2Fintech, the one-stop destination for easing the loan process in India. We help you navigate
+                        the complex world of finance. We have you covered, regardless of the type of loan you require. We
+                        carefully consider specific scenario to ensure you get the best possible offer. Here's
+                        something to be proud of: since our inception, we've made over 11,000 clients happy.
+                        <br></p>  -->
                     <br><a href="https://f2fintech.com/disclaimer.html" target="blank">Disclaimer</a>© <a
                         href="https://f2fintech.com/termsofuse.html">Privacy Policy</a> © <a
                         href="https://f2fintech.com/termsofuse.html">Terms & Condition</a></p>

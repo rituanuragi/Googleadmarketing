@@ -296,6 +296,7 @@ h6,
   background-size: cover;
   width: 100%; /* Adjust as needed */
   height: 100vh;
+  
 
   /* background:
     
@@ -317,6 +318,28 @@ h6,
 .feature-item {
   transition: 0.5s;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .fi {
+    flex: 0 0 48%;
+    align-items: center;
+    justify-content:center ;
+    max-width: 30vh;
+    
+    
+  }
+  .fi h5{
+    font-size: 15px;
+    text-align: left;
+    text-wrap: nowrap;
+    max-width: 30px;
+    margin-left: -5px;
+    
+  }
+  .fd{
+    margin-left: 15px;
+  }
 }
 
 .feature-item:hover {
@@ -548,6 +571,12 @@ h6,
 }
 .steps-text {
   color: black;
+}
+@media only screen and (max-width: 768px) {
+  .steps-text {
+    padding: 0px 25px;
+    text-wrap: pretty;
+  }
 }
 .marquee-container {
   width: 100%; /* Set the container's width to 70% of the viewport width */
@@ -811,7 +840,7 @@ button:hover {
 }
 @media only screen and (max-width: 768px) {
   .about-div {
-    margin-top: 300px;
+    margin-top: 350px;
     font-size: 15px; /* Set font size to 15px for mobile view */
     text-align: center;
   }
@@ -819,13 +848,14 @@ button:hover {
 @media only screen and (max-width: 768px) {
   .about-ele1 {
     align-items: center;
-    padding-left: 140px;
+    padding-left: 165px;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
   .about-ele2 {
     align-items: center;
-    padding-left: 120px;
+    padding-left: 145px;
   }
 }
 /* @media only screen and (max-width: 768px) {
@@ -870,10 +900,43 @@ button:hover {
   cursor: pointer;
 }
 .footer-new {
-  height: 20vh;
+  height: 18vh;
   background-image: url("/img/background3.jpg");
   font-size: 12px;
   text-align: center;
   padding-top: 10px;
-  margin-bottom: 10px;
+ 
+}
+
+
+@media only screen and (max-width: 768px) {
+  .content-top {
+    margin-bottom: -50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-new{
+    height: 45vh;
+    padding: 5px;
+    margin-bottom: 0px;
+    text-wrap:balance;
+  }
+  .steps-para {
+  padding: 0px 20px;
+  }
+}
+.first-div{
+  overflow: hidden;
+}
+.contact-upr-btn{
+  margin-left: 12px;
+}
+.form-div-contact{
+  padding: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .footer-new {
+    height: 33vh;
+    
+  }
 }
